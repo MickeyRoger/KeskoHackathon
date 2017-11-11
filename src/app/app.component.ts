@@ -13,7 +13,7 @@ import {LoginPage} from '../pages/login/login';
     <ion-header>
       <ion-toolbar>
         <ion-title>Pages</ion-title>
-      </ion-toolbar>
+      </ion-toolbar> 
     </ion-header>
 
     <ion-content>
