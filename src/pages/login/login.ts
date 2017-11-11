@@ -18,7 +18,7 @@ export class LoginPage {
   account: { email: string, password: string } = {
     email: 'test@example.com',
     password: 'test' 
-  };
+  }; 
 
   // Our translated text strings
   private loginErrorString: string;
