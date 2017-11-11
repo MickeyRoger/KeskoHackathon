@@ -1,0 +1,141 @@
+@import '../../app/_variables';
+
+.platform-android {
+  min-height: 500px;
+}
+
+
+.login_content {
+
+	background-color: $primary-color;
+	position: relative;
+
+	.item-inner{
+		border-bottom: none !important;
+		padding-right: 0 !important;
+	}
+
+	/* input::-webkit-input-placeholder {
+	    font-size: 16px;
+	    line-height: 3;
+	} */
+
+	.id_input{
+		padding-right: 0 !important;
+		border-top-right-radius: 3px;
+		border-top-left-radius: 3px;
+		border-bottom: solid;
+		border-bottom-width: thin;
+		border-bottom-color: $border-color;
+		height: 60px !important;
+	}
+
+	.pass_input{
+		padding-right: 0 !important;
+		border-bottom-right-radius: 3px;
+		border-bottom-left-radius: 3px;
+		height: 60px !important;
+	}
+
+	.question_icon{
+		color: $primary-color !important; 
+		margin: 20px;
+		opacity: 0.5;
+	}
+
+	
+
+	@media screen and (min-width: 375px) {
+	    .scroll-content{
+	    	padding: 70px 60px 0 !important;
+	    }
+
+	    .login_btn{
+	    	margin-top: 30px !important;
+	    }
+	}
+
+	@media screen and(max-width: 374px){
+
+		.scroll-content{
+			padding: 30px 20px 0 !important;
+			.login_logo{
+				margin-bottom: 40px;
+				margin-top: 20px;
+			}
+    	}
+	}
+	
+
+	ion-icon{
+		font-size: 24px; 
+		color: $gray;
+	}
+
+	.login_left_icon{
+		margin: 20px;
+	}
+
+	.login_btn{
+		width: 100%;
+		margin: 0;
+	    margin-top: 20px;
+	    height: 60px;
+	    background-color: $btn-light-bg;
+	    font-weight: bold; 
+	    color: #FFF;
+	    font-size: 18px;
+	    text-transform: uppercase;
+	    font-family: 'Source Sans Pro', sans-serif;
+	    /* letter-spacing: -1px; */
+
+	    ion-icon{
+	    	margin-left: 10px;
+	    	color: #FFF;
+	    }
+	}
+
+	.bottom_text{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		color: #FFFFFF !important;
+		text-decoration: underline;
+		text-align: center;
+		padding-bottom: 30px;
+		padding-left: 60px;
+		padding-right: 60px;
+		font-size: 16px;
+	}
+
+	.center_div{
+		width: 100%;
+		text-align: center;
+	}
+
+	.success {
+		color: $success;
+	}
+
+	.error {
+		color: $error;
+	}
+
+	.text-input{
+		text-transform: uppercase;
+	}
+
+	::placeholder {
+		text-transform: none;
+	}
+}
+
+.login_logo{
+	margin-bottom: 70px;
+	margin-top: 0px;
+}
+
+
+
+

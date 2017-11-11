@@ -1,0 +1,70 @@
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'LOGIN_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <form (submit)="doLogin()">
+    <ion-list>
+
+      <ion-item>
+        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+      </ion-item>
+
+      
+
+      <ion-item>
+        <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
+        <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button ion-button color="primary" block>{{ 'LOGIN_BUTTON' | translate }}</button>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content> -->
+
+<ion-content padding class="login_content">
+  <ion-grid no-padding>
+    <ion-row>
+      <div class="center_div">
+        <!-- <img src="assets/logo_1.png" class="login_logo"> -->
+      </div>
+        
+    </ion-row>
+
+    <ion-row id="login_row" class="login_input">
+        <div class="popup_wrap">
+            <ion-item class="id_input">
+                <ion-input (keypress)="key_handler($event.keyCode)" type="text" placeholder="Your reference code"></ion-input>
+                <ion-icon  class="login_left_icon" ios="md-key" md="md-key" item-left></ion-icon>
+                <ion-icon class="question_icon" ios="md-help-circle" md="md-help-circle" item-right></ion-icon>
+            </ion-item>
+        </div>
+
+        <div class="popup_wrap">
+            <ion-item class="pass_input">
+                <ion-input (keypress)="key_handler($event.keyCode)" type="text" placeholder="Your last name" ></ion-input>
+                <ion-icon class="login_left_icon" ios="md-person" md="md-person" item-left></ion-icon>
+            </ion-item>  
+        </div>
+      
+    </ion-row>
+
+    <ion-row>
+      <button ion-button color="primary" block>{{ 'LOGIN_BUTTON' | translate }}</button>
+    </ion-row>
+    <ion-row  class="bottom_text">
+      <div class="center_div">
+        <p>Check our website for more information and to rent a cottage!</p>
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>
