@@ -5,7 +5,7 @@
   "EMAIL": "Email",
   "USERNAME": "Username",
   "PASSWORD": "Password",
-  "LOGIN": "Sign in",
+  "LOGIN": "LOGIN",
   "SIGNUP": "Sign up",
 
   "TAB1_TITLE": "Items",
@@ -44,7 +44,7 @@
 
   "LOGIN_TITLE": "Sign in",
   "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
-  "LOGIN_BUTTON": "Sign in",
+  "LOGIN_BUTTON": "LOGIN",
   "SIGNUP_TITLE": "Sign up",
   "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
   "SIGNUP_BUTTON": "Sign up",

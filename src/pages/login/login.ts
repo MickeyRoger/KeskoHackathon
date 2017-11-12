@@ -5,7 +5,7 @@ import { Http, Headers } from '@angular/http';
 import { FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { User } from '../../providers/providers';
 import { MainPage } from '../pages';
-
+import { LandingPage } from '../landing/landing'
 @IonicPage()
 @Component({
   selector: 'page-login',
@@ -34,8 +34,9 @@ export class LoginPage {
   }
 
   // Attempt to login in through our User service
-  doLogin() {
-    this.user.login(this.account).subscribe((resp) => {
+  login() {
+    this.navCtrl.push(MainPage);
+    /*this.user.login(this.account).subscribe((resp) => {
       this.navCtrl.push(MainPage);
     }, (err) => {
       this.navCtrl.push(MainPage);
@@ -46,6 +47,6 @@ export class LoginPage {
         position: 'top'
       });
       toast.present();
-    });
+    });*/
   }
 }

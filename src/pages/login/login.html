@@ -36,6 +36,12 @@
     <ion-row>
       <div class="center_div">
         <!-- <img src="assets/logo_1.png" class="login_logo"> -->
+        <div class="app_name">
+          koppi
+        </div>
+        <div class="app_slogan">
+          More time for work!
+        </div>
       </div>
         
     </ion-row>
@@ -43,27 +49,33 @@
     <ion-row id="login_row" class="login_input">
         <div class="popup_wrap">
             <ion-item class="id_input">
-                <ion-input (keypress)="key_handler($event.keyCode)" type="text" placeholder="Your reference code"></ion-input>
-                <ion-icon  class="login_left_icon" ios="md-key" md="md-key" item-left></ion-icon>
-                <ion-icon class="question_icon" ios="md-help-circle" md="md-help-circle" item-right></ion-icon>
+                <ion-input (keypress)="key_handler($event.keyCode)" type="text" placeholder="Username"></ion-input>
+                <ion-icon class="login_left_icon" ios="md-person" md="md-person" item-left></ion-icon>
+                
             </ion-item>
         </div>
 
         <div class="popup_wrap">
             <ion-item class="pass_input">
-                <ion-input (keypress)="key_handler($event.keyCode)" type="text" placeholder="Your last name" ></ion-input>
-                <ion-icon class="login_left_icon" ios="md-person" md="md-person" item-left></ion-icon>
+                <ion-input (keypress)="key_handler($event.keyCode)" type="text" placeholder="Password" ></ion-input>
+                <ion-icon  class="login_left_icon" ios="md-key" md="md-key" item-left></ion-icon>
             </ion-item>  
         </div>
-      
     </ion-row>
 
     <ion-row>
-      <button ion-button color="primary" block>{{ 'LOGIN_BUTTON' | translate }}</button>
+      <div class="forgot_pass">
+        Forgot your password?
+      </div>
     </ion-row>
-    <ion-row  class="bottom_text">
-      <div class="center_div">
-        <p>Check our website for more information and to rent a cottage!</p>
+
+    <ion-row class="login_btn_row">
+      <button ion-button block class="login_btn" (click)="login()">{{ 'LOGIN_BUTTON' | translate }}</button>
+    </ion-row>
+
+    <ion-row>
+      <div class="sign_up_text"> 
+        Are you new user?
       </div>
     </ion-row>
   </ion-grid>

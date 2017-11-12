@@ -1,5 +1,7 @@
 @import '../../app/_variables';
 
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 .platform-android {
   min-height: 500px;
 }
@@ -7,7 +9,9 @@
 
 .login_content {
 
-	background-color: $primary-color;
+	background: linear-gradient( rgba(51, 0, 116, 0.85), rgba(51, 0, 116, 0.85) ), url('/assets/background_pic.png');
+    background-position:center top;
+
 	position: relative;
 
 	.item-inner{
@@ -20,10 +24,22 @@
 	    line-height: 3;
 	} */
 
+	.popup_wrap{
+		width: 100%;
+	}
+
+	.forgot_pass{
+		margin: 1.5rem 0;
+	    text-align: center;
+	    width: 100%;
+	    font-family: arial, sans-serif;
+	    color: #FFF;
+	}
+
 	.id_input{
 		padding-right: 0 !important;
-		border-top-right-radius: 3px;
-		border-top-left-radius: 3px;
+		border-top-right-radius: 2px;
+		border-top-left-radius: 2px;
 		border-bottom: solid;
 		border-bottom-width: thin;
 		border-bottom-color: $border-color;
@@ -32,8 +48,8 @@
 
 	.pass_input{
 		padding-right: 0 !important;
-		border-bottom-right-radius: 3px;
-		border-bottom-left-radius: 3px;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
 		height: 60px !important;
 	}
 
@@ -47,7 +63,7 @@
 
 	@media screen and (min-width: 375px) {
 	    .scroll-content{
-	    	padding: 70px 60px 0 !important;
+	    	padding: 70px 40px 0 !important;
 	    }
 
 	    .login_btn{
@@ -76,23 +92,23 @@
 		margin: 20px;
 	}
 
+	.login_btn_row{
+		text-align: center;
+		margin-top: 30px;
+	}
+
 	.login_btn{
-		width: 100%;
-		margin: 0;
-	    margin-top: 20px;
-	    height: 60px;
-	    background-color: $btn-light-bg;
+		width: 35%;
+
+	    margin: auto;
+	    height: 43px;
+	    background-color: #38DB67;
 	    font-weight: bold; 
 	    color: #FFF;
-	    font-size: 18px;
+	    font-size: 16px;
 	    text-transform: uppercase;
-	    font-family: 'Source Sans Pro', sans-serif;
-	    /* letter-spacing: -1px; */
-
-	    ion-icon{
-	    	margin-left: 10px;
-	    	color: #FFF;
-	    }
+	    font-family: 'Nunito', sans-serif;
+	    border-radius: 2px;
 	}
 
 	.bottom_text{
@@ -112,6 +128,27 @@
 	.center_div{
 		width: 100%;
 		text-align: center;
+		margin-bottom: 5rem;
+
+		.app_name{
+			font-size: 62px;
+		    color: #FFF;
+		    font-family: Hiragino Maru Gothic Pro;
+		}
+
+		.app_slogan{
+			font-family: 'Nunito', sans-serif;
+			color: #FFF;
+			font-size: 18px;
+		}
+	}
+
+	.sign_up_text{
+		
+		font-family: arial, sans-serif;
+		color: #FFF;
+		text-align: center;
+		margin: 5rem auto;
 	}
 
 	.success {
@@ -128,6 +165,7 @@
 
 	::placeholder {
 		text-transform: none;
+		font-size: 16px;
 	}
 }
 

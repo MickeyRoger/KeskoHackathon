@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+.landing_header{
+	padding: 2rem 3rem;
+}
+
+.title{
+	font-family: 'Nunito', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.menu_icon{
+	float: right;
+}
+
+.ion-ios-menu::before{
+	font-size: 30px;
+}
