@@ -17,7 +17,7 @@ import { Settings } from '../providers/providers';
 import { User } from '../providers/providers';
 import { Api } from '../providers/providers';
 import { MyApp } from './app.component';
-
+import { OneSignal } from '@ionic-native/onesignal';
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function createTranslateLoader(http: HttpClient) {
@@ -68,6 +68,7 @@ export function provideSettings(storage: Storage) {
     Api,
     Items,
     User,
+    OneSignal,
     Camera,
     SplashScreen,
     StatusBar,
