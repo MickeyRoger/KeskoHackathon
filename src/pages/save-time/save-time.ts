@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { SaveTimePage } from '../pages';
 
 /**
- * Generated class for the BonusPage page.
+ * Generated class for the SaveTimePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,16 @@ import { SaveTimePage } from '../pages';
 
 @IonicPage()
 @Component({
-  selector: 'page-bonus',
-  templateUrl: 'bonus.html',
+  selector: 'page-save-time',
+  templateUrl: 'save-time.html',
 })
-export class BonusPage {
+export class SaveTimePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BonusPage');
-  }
-
-  goto_savedTime(){
-  	this.navCtrl.push(SaveTimePage);
+    console.log('ionViewDidLoad SaveTimePage');
   }
 
 }

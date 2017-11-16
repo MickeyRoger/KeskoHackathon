@@ -23,9 +23,9 @@
 		
 	</div>
 	<div id="notification_btn">
-		<button ion-button block class="notification_btn" (click)="send_notification()">INFORM OTHERS</button>
+		<button ion-button block class="notification_btn" (click)="send_notification('order')">INFORM OTHERS</button>
 	</div>
-	<div id="pickup3">
+	<div id="pickup3" (click)="send_notification('delay')">
 		
 	</div>
 </ion-content>

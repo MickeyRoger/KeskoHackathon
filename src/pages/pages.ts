@@ -12,3 +12,4 @@ export const Tab3Root = 'SettingsPage';
 export const Pickup2Page = 'Pickup2Page';
 export const Pickup4Page = 'Pickup4Page';
 export const BonusPage = 'BonusPage';
+export const SaveTimePage = 'SaveTimePage';

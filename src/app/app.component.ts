@@ -35,8 +35,8 @@ export class MyApp {
 
   pages: any[] = [
     { title: 'Dashboard', component: 'LandingPage' },
-    { title: 'Settings', component: 'SettingsPage' },
-    { title: 'Search', component: 'SearchPage' }
+    { title: 'Saved Time', component: 'SaveTimePage' },
+    { title: 'Notify', component: 'Pickup2Page' }
   ]
 
   constructor(
@@ -75,10 +75,10 @@ export class MyApp {
 
       this.oneSignal.endInit();*/
 
-      window["plugins"].OneSignal
+      /*window["plugins"].OneSignal
         .startInit("cf3dc23f-9d5e-4ce0-a3f3-91232716575d", "811749407675")
         .handleNotificationOpened(notificationOpenedCallback)
-        .endInit();
+        .endInit();*/
     });
 
     this.initTranslate();

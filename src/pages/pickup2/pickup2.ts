@@ -23,10 +23,17 @@ export class Pickup2Page {
     console.log('ionViewDidLoad Pickup2Page');
   }
 
-  send_notification(){
+  send_notification(type: string){
   	this.navCtrl.push(BonusPage);
 
   	const headers = new Headers();
+
+  	let content = "Joonas Hattunen is going to Kesko. Order now!";
+
+  	if(type == 'delay') {
+  		content = "Attention! Bathroom electricity for apartment 5 components are delayed for 3 more days!";
+  	}
+
     headers.append('Content-Type', 'application/json');
     headers.append('Authorization', `Basic MGQxN2YwMTktMmM3My00ZGQxLWJhMWEtMGI3MDA3Nzc4ODIy`);
 
@@ -35,7 +42,7 @@ export class Pickup2Page {
 	   "https://onesignal.com/api/v1/notifications",
 	   JSON.stringify({ 
 			  "app_id": "cf3dc23f-9d5e-4ce0-a3f3-91232716575d",
-			  "contents": {"en": "Joonas Hattunen is going to Kesko. Order now!"},
+			  "contents": {"en": content},
 			  "included_segments": ["All"]
 			}),
 	   options
