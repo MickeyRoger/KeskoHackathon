@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Pickup2Page } from '../pages';
+
 /**
- * Generated class for the LandingPage page.
+ * Generated class for the BonusPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,21 +10,16 @@ import { Pickup2Page } from '../pages';
 
 @IonicPage()
 @Component({
-  selector: 'page-landing',
-  templateUrl: 'landing.html',
+  selector: 'page-bonus',
+  templateUrl: 'bonus.html',
 })
-export class LandingPage {
+export class BonusPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LandingPage');
-  }
-
-
-  go_to_pickup2(){
-  	this.navCtrl.push(Pickup2Page);
+    console.log('ionViewDidLoad BonusPage');
   }
 
 }

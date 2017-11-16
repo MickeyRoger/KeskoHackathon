@@ -18,3 +18,13 @@
 .ion-ios-menu::before{
 	font-size: 30px;
 }
+
+#pickup1{
+	background: url(/assets/pickup1.png) no-repeat center top;
+    background-size: cover;
+    min-height: 155%;
+}
+
+.scroll-content{
+	padding: 0 !important;
+}

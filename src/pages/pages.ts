@@ -9,3 +9,6 @@ export const MainPage = 'LandingPage';
 export const Tab1Root = 'ListMasterPage';
 export const Tab2Root = 'SearchPage';
 export const Tab3Root = 'SettingsPage';
+export const Pickup2Page = 'Pickup2Page';
+export const Pickup4Page = 'Pickup4Page';
+export const BonusPage = 'BonusPage';
